@@ -1,0 +1,15 @@
+<section>
+  <div class="form-container--main">
+    <div class="form-container">
+      <h2>Запишитесь <span class="highlight">бесплатно</span> и получите подарок</h2>
+      <form (ngSubmit)="onSubmit(signupForm)" #signupForm="ngForm">
+        <input type="text" name="fullName" placeholder="Ваше имя и фамилия" ngModel required>
+        <input type="tel" name="phone" placeholder="Ваш номер телефона" ngModel required>
+        <input type="email" name="email" placeholder="Ваш email" ngModel required>
+        <button type="submit">Записаться бесплатно</button>
+      </form>
+
+      <p>Нажимая на кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+    </div>
+  </div>
+</section>
